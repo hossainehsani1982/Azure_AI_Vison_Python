@@ -20,7 +20,6 @@ def get_text_from_image(image_path):
     
     for region in recognize_printed_results.regions:
         for line in region.lines:
-            # Each line consists of words
             for word in line.words:
                 list_text_in_image.append(word.text)
                
